@@ -22,7 +22,7 @@ dependencies:
   - jupyter-archive
 
   # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
-  - jupyter-rsession-proxy==2.3.0
+  #- jupyter-rsession-proxy==2.3.0 test de son install seulement dans le postbuild
   
   # Python environment
   - python
