@@ -10,7 +10,7 @@ JUPYTER="$NOTEBOOK_ENV/bin/jupyter"
 
 # 1. (Re)installer jupyter-rsession-proxy dans le bon environnement
 # (optionnel si vous êtes sûr qu'il y est déjà, mais ça sécurise)
-"$PIP" install --no-cache-dir --upgrade 'jupyter-rsession-proxy==2.3.0'
+"$PIP" install --no-cache-dir --upgrade 'jupyter-rsession-proxy==2.5.0'
 
 # 2. Activer l'extension avec le bon jupyter
 "$JUPYTER" server extension enable jupyter_rsession_proxy || \
