@@ -25,19 +25,19 @@ if [ ! -x "$TARGET_LINK" ]; then
 fi
 
 # 3. (Optionnel) Configuration rserver.conf pour JupyterHub/Plasma
-RSERVER_CONF="/etc/rstudio/rserver.conf"
+#RSERVER_CONF="/etc/rstudio/rserver.conf"
 
-if ! grep -q "^auth-none=" "$RSERVER_CONF" 2>/dev/null; then
-    echo "auth-none=1" >> "$RSERVER_CONF"
-fi
+#if ! grep -q "^auth-none=" "$RSERVER_CONF" 2>/dev/null; then
+ #   echo "auth-none=1" >> "$RSERVER_CONF"
+#fi
 
-if ! grep -q "^www-address=" "$RSERVER_CONF" 2>/dev/null; then
-    echo "www-address=0.0.0.0" >> "$RSERVER_CONF"
-fi
+#if ! grep -q "^www-address=" "$RSERVER_CONF" 2>/dev/null; then
+#    echo "www-address=0.0.0.0" >> "$RSERVER_CONF"
+#fi
 
-if ! grep -q "^www-frame-origin=" "$RSERVER_CONF" 2>/dev/null; then
-    echo "www-frame-origin=same" >> "$RSERVER_CONF"
-fi
+#if ! grep -q "^www-frame-origin=" "$RSERVER_CONF" 2>/dev/null; then
+#    echo "www-frame-origin=same" >> "$RSERVER_CONF"
+#fi
 
 # 4. Enregistrer le kernel R pour cet environnement
 R --quiet -e "IRkernel::installspec(prefix='/srv/conda/envs/notebook')" || true
