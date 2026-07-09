@@ -20,20 +20,21 @@ dependencies:
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
   - jupyter-archive
+
+  # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
+  - jupyter-rsession-proxy
   
   # Python environment
   - python
   - pip
   - pip:
     - watermark
-    - jupyter-rsession-proxy      # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
 
   # R environment (version for Ubuntu 24.04)
   - r-irkernel
   - r-base
 
   # R packages
-  - r-essentials                   # inclut tidyverse
-                                          
+  - r-essentials                   # inclut tidyverse                                       
   # - r-markdown
   
