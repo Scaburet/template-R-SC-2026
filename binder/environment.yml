@@ -26,14 +26,11 @@ dependencies:
   - pip
   - pip:
     - watermark
+    - jupyter-rsession-proxy      # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
 
   # R environment (version for Ubuntu 24.04)
   - r-irkernel
   - r-base
-
-  # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
-  - jupyter-rsession-proxy
-  #- jupyter-shiny-proxy          # fait planter la construction de l'env
 
   # R packages
   - r-essentials                   # inclut tidyverse
