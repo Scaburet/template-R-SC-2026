@@ -23,8 +23,11 @@ dependencies:
   # https://github.com/jupyterlab-contrib/jupyter-archive
   - jupyter-archive
 
+  # Bash environment
+  - bash_kernel
+
   # RStudio proxy (nécessaire pour afficher RStudio dans JupyterLab)
-  - jupyter-rsession-proxy==2.5.0   
+  - jupyter-rsession-proxy==2.3.0   
   
   # Python environment
   - python=3.10
