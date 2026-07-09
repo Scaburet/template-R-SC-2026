@@ -1,0 +1,4 @@
+# Specification of R snapshot, required for Rstudio
+# Tested by commenting the R version in the yml file
+
+r-4.4-2026-07-08
